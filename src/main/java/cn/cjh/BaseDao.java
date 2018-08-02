@@ -12,6 +12,7 @@ public class BaseDao {
     static {
         try {
             // 001.加载驱动
+            //516546
             Class.forName(ConfigManager.getValue("jdbc.driver"));
             // 002.连接数据库
             connection = DriverManager.getConnection(
